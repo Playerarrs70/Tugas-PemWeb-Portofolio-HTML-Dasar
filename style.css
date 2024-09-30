@@ -1,0 +1,55 @@
+#non-link{
+    text-decoration: none; 
+    color: inherit;
+    transition: color 0.5s
+}
+
+#non-link:hover{
+    color: blue;
+    transform: translatex(1000px);
+}
+
+#non-link:active{
+    transform: scale(0.95);
+    transition: transform 0.5s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+img{
+    width: 300px;
+    transition: rotate 0.5s;
+}
+
+img:hover{
+    rotate: 10deg;
+}
+
+img:active{
+    transform: scale(0.95);
+    transition: transform 0.5s;
+}
+
+#menu{
+    font-size: 40px;
+    color: black;
+    animation-name: color-change;
+    animation-duration: 2s;
+}
+
+@keyframes color-change {
+    from {
+        color: blue;
+    }
+    
+    to {
+        color: black;
+        text-decoration: none; 
+    }
+  }
